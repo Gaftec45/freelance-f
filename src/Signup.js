@@ -17,7 +17,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/signup', formData);
+      const response = await axios.post('https://freelance-wrfr.onrender.com/signup', formData);
       console.log(response.data); // Handle successful response
       history.push('/login'); // Redirect to login page after successful registration
     } catch (error) {
